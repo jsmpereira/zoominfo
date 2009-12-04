@@ -40,6 +40,10 @@ module ZoomInfo
     #
     # See: http://developer.zoominfo.com/documentation#5.3
     #
+    # Note: this API call is currently broken
+    #       http://developer.zoominfo.com/forum/read/9644
+    #       http://developer.zoominfo.com/forum/read/41089
+    #
     def competitors(options = {})
       options.merge!({:query_type => 'company_competitors'})
       self.class.get("/", :query => options)

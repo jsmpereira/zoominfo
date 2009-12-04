@@ -1,17 +1,23 @@
 = zoominfo
 
-Description goes here.
+ZoomInfo API Ruby Wrapper
 
-== Note on Patches/Pull Requests
- 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+http://developer.zoominfo.com/
 
-== Copyright
+== Usage
 
-Copyright (c) 2009 Jose Santos. See LICENSE for details.
+=== Company Search
+	
+	company = ZoomInfo::Company.new("api_key")
+		
+	company.search({:companyDesc => "Internet"})
+	company.detail({:CompanyDomain => "www.ibm.com"})
+	company.competitors({:CompanyID => "18579882"}) # This API call is currently broken
+		
+=== People Search
+	
+	people = ZoomInfo::People.new("api_key")
+		
+	people.search({:firstName => 'Jonh'})
+		
+For a complete list of parameters see http://developer.zoominfo.com/documentation
