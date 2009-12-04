@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "zoominfo"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{ZoomInfo API Ruby Wrapper}
+    gem.description = %Q{ZoomInfo API Ruby Wrapper}
     gem.email = "jsmpereira@gmail.com"
     gem.homepage = "http://github.com/jsmpereira/zoominfo"
     gem.authors = ["Jose Santos"]
