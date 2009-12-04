@@ -4,6 +4,10 @@ ZoomInfo API Ruby Wrapper
 
 http://developer.zoominfo.com
 
+== Install
+
+	sudo gem install zoominfo
+
 == Usage
 
 === Company Search
