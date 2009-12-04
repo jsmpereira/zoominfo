@@ -25,7 +25,8 @@ Gem::Specification.new do |s|
      "VERSION",
      "lib/zoominfo.rb",
      "test/helper.rb",
-     "test/test_zoominfo.rb"
+     "test/test_zoominfo.rb",
+     "zoominfo.gemspec"
   ]
   s.homepage = %q{http://github.com/jsmpereira/zoominfo}
   s.rdoc_options = ["--charset=UTF-8"]
